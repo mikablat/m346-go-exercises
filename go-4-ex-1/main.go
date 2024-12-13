@@ -1,7 +1,13 @@
 package main
 
-// TODO: implement the function computeGrade
+import "fmt"
 
+func computeGrade(E,M float64) float64{
+	N := E/M * 5 + 1
+	return N
+}
 func main() {
-	// TODO: call the function computeGrade
+	fmt.Println(computeGrade(45, 60))
+	fmt.Println(computeGrade(50, 90))
+	fmt.Println(computeGrade(4, 10))
 }
